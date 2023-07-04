@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+</head>
+
+    <!-- static method -->
+    <style>
+        .static-example {
+        position: static;
+
+        }
+
+         /* fixed mehod */
+        .fixed-example {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+
+        /* sticky */
+        .sticky-example {
+            position: sticky;
+            top: 50px;
+        }
+         
+        /* relative */
+         .relative-example {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+        /* absoulate */
+        .parent {
+            position: relative;
+        }
+
+            .absolute-example {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+         }
+
+
+
+
+    </style>
+<body>
+     <!-- static -->
+<div class="static-example">
+  This is a static positioned element.
+</div>
+
+  <!-- fixed -->
+  <div class="fixed-example">
+  This is a fixed positioned element.
+</div>
+
+<!-- sticky -->
+<div class="sticky-example">
+  This is a sticky positioned element.
+</div>
+
+
+<!-- Relative -->
+<div class="relative-example">
+  This is a relatively positioned element.
+</div>
+
+<!-- absoulate -->
+<div class="parent">
+  <div class="absolute-example">
+    This is an absolutely positioned element.
+  </div>
+</div>
+
+<!-- excustion context -->
++--------------------------------------------------+
+|               Execution Context                   |
+|                                                  |
+|    +-------------------------------------+       |
+|    |      Variable Environment          |       |
+|    |                                     |       |
+|    |  Variables                          |       |
+|    |  Function declarations              |       |
+|    +-------------------------------------+       |
+|                                                  |
+|    +-------------------------------------+       |
+|    |       Lexical Environment          |       |
+|    |                                     |       |
+|    |  Variables                          |       |
+|    |  Function declarations              |       |
+|    |  Lexical Scope Chain                |       |
+|    +-------------------------------------+       |
+|                                                  |
+|    +-------------------------------------+       |
+|    |         This Binding                |       |
+|    |                                     |       |
+|    |  Value of "this"                    |       |
+|    +-------------------------------------+       |
+|                                                  |
++--------------------------------------------------+
+
+
+
+  
+</body>
+</head>
